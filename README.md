@@ -23,7 +23,7 @@ bareIRC does not aim to be a feature-rich IRC client such as [weechat](https://w
 
 for the moment there is no real way of "installing" bareIRC, but you can compile directly from source!
 ```
-https://github.com/Felipeshaolin/bareIRC.git
+git clone https://github.com/Felipeshaolin/bareIRC.git
 cd bareIRC  
 nasm -f elf64 irc.s -o /bin/bareIRC  
 ```
