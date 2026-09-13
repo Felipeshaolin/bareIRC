@@ -25,7 +25,7 @@ for the moment there is no real way of "installing" bareIRC, but you can compile
 ```
 git clone https://github.com/Felipeshaolin/bareIRC.git
 cd bareIRC  
-nasm -f elf64 irc.s -o /bin/bareIRC  
+nasm -f elf64 irc.s -o bin/bareIRC  
 ```
 the executable should now be in the bareIRC/bin/ folder.
 
