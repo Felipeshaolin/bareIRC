@@ -1,0 +1,48 @@
+
+variables
+	chaine buffer,charactere,firstnumber,secondnumber
+	entier index,taille
+debut
+
+
+	rdi <- 2;
+
+	pour i de 1 a 3
+
+		si buffer[rdi+i] = ';'
+
+			firstnumber <- buffer[2,rdi+i] ;
+			rdi <- rdi + i
+			break;
+		finsi
+		
+		i suivant
+	fin pour
+
+	pour i de 1 a 3
+	
+		si buffer[rdi+i] = 'R'
+
+			secondnumber <- buffer[rdi,rdi+i] ;
+			rdi <- rdi + i
+			break;
+		finsi
+			
+		i suivant
+	fin pour
+
+fin
+
+variable
+	chaine fnumber,snumber
+	entier x,y,puissance <- 1
+debut
+
+	pour i de 3 a 1 pas -1
+		x <- fnumber[i] * puissance
+		y <- snumber[i] * puissance
+		puissance <- puissance * 10
+	fin pour
+	
+fin
+
